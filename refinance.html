@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Refinancing demo</title>
+</head>
+
+<body>
+
+<h1>Refinancing demo...</h1>
+<p>...with flexible inputs instead of drop-down lists. Drag the sliders or enter exact numbers to adjust the plan terms.</p>
+<ul>
+	<li>Balance: $1200</li>
+	<li>Period: Monthly</li>
+	<li>Maximum plan length: 13 months</li>
+</ul>
+<br>
+
+<div id="inputForms">
+	<label>Monthly payment amount:</label>
+	<input type="number" step="0.01" id="paymentAmount" >
+	<br>
+	<input type="range" step="0.01" id="paymentAmountSlider">
+	<br><br>
+	<label>Final payment date:</label>
+	<span id="finalDate"></span>
+	<br>
+	<input type="range" id="finalDateSlider">
+</div>
+
+<p id="debug"></p>
+
+<div id="outputTable">
+</div>
+
+<script src="refinance.js"></script>
+
+</body>
+</html>
