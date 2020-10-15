@@ -4,7 +4,7 @@ var finalDate = document.getElementById("finalDate");
 var finalDateSlider = document.getElementById("finalDateSlider");
 
 finalDateSlider.min = 1;
-finalDateSlider.max = 13;
+finalDateSlider.max = 15;
 finalDateSlider.value = 12;
 
 updateDateText();
